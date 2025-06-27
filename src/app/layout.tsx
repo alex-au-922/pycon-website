@@ -2,16 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "../styles/globals.css";
 import ToCFooter from "./ToCFooter";
+import { Montserrat } from "next/font/google";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const montserrat = Montserrat({ weight: ["500", "600"], subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "The leading Python Conference in Hong Kong",
@@ -26,12 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en_US">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-        <ToCFooter />
-      </body>
+      <body className={`${montserrat.className}`}>{children}</body>
     </html>
   );
 }

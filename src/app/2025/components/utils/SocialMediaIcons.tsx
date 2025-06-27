@@ -49,12 +49,12 @@ const socialMediaLinks: SocialMediaLink[] = [
 
 export default async function SocialMediaIcons({
   spacing = "space-x-4",
-  iconColor = "text-white",
-  iconHoverColor = "hover:text-gray-400",
+  iconColor = "text-gray-600",
+  iconHoverColor = "hover:text-gray-800",
   iconExtraClasses = [],
 }: SocialMediaIconsProps) {
   return (
-    <div className={`flex ${spacing}`}>
+    <div className={`flex ${spacing} mt-6`}>
       {socialMediaLinks.map(({ icon: Icon, href }) => (
         <a key={href} href={href} target="_blank" rel="noopener noreferrer">
           <Icon

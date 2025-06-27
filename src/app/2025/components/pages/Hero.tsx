@@ -1,36 +1,51 @@
-export default async function Hero() {
+import Image from "next/image";
+import { Itim } from "next/font/google";
+const itim = Itim({ weight: ["400"], subsets: ["latin"] });
+
+import CountdownTimer from "./CountdownTimer";
+
+export default function Hero() {
   return (
-    <section className="bg-gray-100 dark:bg-gray-900 py-16 w-screen h-[calc(100vh-64px)]">
-      <div className="container mx-auto px-4 flex flex-col items-center justify-center h-full">
-        <div className="w-2xl aspect-square text-wrap flex flex-col items-center justify-center bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg">
-          <h1 className="text-4xl font-bold text-center mb-6">PyCon HK 2025</h1>
-          <p className="text-lg text-center mb-8">
-            Join us for the leading Python conference in Hong Kong, where
-            enthusiasts gather to share insights and foster collaboration.
-          </p>
-          <div className="grid grid-cols-12 gap-4">
-            <p className="col-span-2">
-              <span>Date:</span>
-            </p>
-            <p className="col-span-10 flex flex-col items-center">
-              <span className="font-semibold">
-                October 11, 2025 (Conference Day)
-              </span>
-              <span className="font-semibold">October 12, 2025 (Sprint)</span>
-            </p>
+    <main className="container mx-auto h-screen flex justify-center items-center">
+      <section className="px-4 w-full flex flex-col lg:flex-row justify-between items-center">
+        <aside className="w-full lg:w-1/2 text-center lg:text-start">
+          <h1 className="text-6xl :text-7xl 2xl:text-8xl mb-5 text-gray-600">
+            <small className="text-2xl xl:text-4xl font-bold text-gray-800">
+              Pycon HK 2025 is
+            </small>
+            <br />
+            <span className={itim.className}>Coming Soon</span>
+          </h1>
+
+          <CountdownTimer launchDate="2025-10-11T09:00:00" />
+
+          {/* Conference Info */}
+          <div className="border-3 border-white text-gray-700 rounded shadow-md px-4 py-3 my-5 inline-block text-left mt-8 w-full max-w-xs sm:max-w-md md:max-w-lg">
+            <div className="font-bold text-md xl:text-xl mb-1">Date:</div>
+            <div className="font-semibold text-base xl:text-lg">
+              October 11, 2025 (Conference Day)
+            </div>
+            <div className="font-semibold text-base xl:text-lg">
+              October 12, 2025 (Sprint)
+            </div>
+            <div className="font-bold text-base xl:text-lg mt-3 mb-1">
+              Venue:
+            </div>
+            <div className="font-semibold text-base xl:text-lg">
+              City University of Hong Kong, Kowloon Tong, HK
+            </div>
           </div>
-          <div className="grid grid-cols-12 gap-4">
-            <p className="col-span-2">
-              <span>Venue:</span>
-            </p>
-            <p className="col-span-10 flex flex-col items-center">
-              <span className="font-semibold">
-                City University of Hong Kong, Kowloon Tong
-              </span>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+        </aside>
+        <aside className="w-full lg:w-1/2 flex justify-center mt-5 lg:mt-0 lg:pl-4">
+          <Image
+            src="/icon.png"
+            alt="Pycon Logo"
+            width={250}
+            height={250}
+            className="w-36 sm:w-48 md:w-74 xl:w-full   max-w-[460px] h-auto opacity-70 mr-12 "
+          />
+        </aside>
+      </section>
+    </main>
   );
 }
