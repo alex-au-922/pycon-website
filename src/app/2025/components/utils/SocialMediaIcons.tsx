@@ -56,7 +56,13 @@ export default async function SocialMediaIcons({
   return (
     <div className={`flex ${spacing} mt-6`}>
       {socialMediaLinks.map(({ icon: Icon, href }) => (
-        <a key={href} href={href} target="_blank" rel="noopener noreferrer">
+        <a
+          key={href}
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="transition-transform duration-200 hover:scale-110"
+        >
           <Icon
             className={`font-bold text-lg ${iconColor} ${iconHoverColor} transition-colors ${iconExtraClasses.join(
               " "

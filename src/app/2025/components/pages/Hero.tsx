@@ -1,17 +1,17 @@
-import Image from "next/image";
 import { Itim } from "next/font/google";
 const itim = Itim({ weight: ["400"], subsets: ["latin"] });
 
 import CountdownTimer from "./CountdownTimer";
+import BannerImageSlide from "./BannerImageSlide";
 
 export default function Hero() {
   return (
     <main className="container mx-auto h-screen flex justify-center items-center">
       <section className="px-4 w-full flex flex-col lg:flex-row justify-between items-center">
         <aside className="w-full lg:w-1/2 text-center lg:text-start">
-          <h1 className="text-6xl :text-7xl 2xl:text-8xl mb-5 text-gray-600">
-            <small className="text-2xl xl:text-4xl font-bold text-gray-800">
-              Pycon HK 2025 is
+          <h1 className="text-5xl xl:text-6xl  mb-5 text-gray-600">
+            <small className="text-3xl xl:text-5xl font-bold text-gray-800 opacity-90">
+              PyCon HK 2025 is
             </small>
             <br />
             <span className={itim.className}>Coming Soon</span>
@@ -37,13 +37,7 @@ export default function Hero() {
           </div>
         </aside>
         <aside className="w-full lg:w-1/2 flex justify-center mt-5 lg:mt-0 lg:pl-4">
-          <Image
-            src="/icon.png"
-            alt="Pycon Logo"
-            width={250}
-            height={250}
-            className="w-36 sm:w-48 md:w-74 xl:w-full   max-w-[460px] h-auto opacity-70 mr-12 "
-          />
+          <BannerImageSlide />
         </aside>
       </section>
     </main>
