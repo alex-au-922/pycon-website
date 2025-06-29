@@ -5,8 +5,8 @@ import { useEffect, useState } from "react";
 const images = [
   "/Event_1.jpeg",
   "/Event_2.jpeg",
-  "/Event_3.jpeg",
-  "/Event_4.JPG",
+  "/Event_3.JPG",
+  "/Event_4.jpeg",
 ];
 
 export default function BannerImageSlide() {
