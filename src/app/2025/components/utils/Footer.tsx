@@ -1,20 +1,14 @@
 import SocialMediaIcons from "./SocialMediaIcons";
 
-export default async function Footer() {
+export default function Footer() {
   return (
-    <section id="footer">
-      <footer>
-        <div className="flex items-center justify-around container mx-auto">
-          <div>
-            <p className="text-lg">Follow Us</p>
-            <SocialMediaIcons iconExtraClasses={["text-xl"]} />
-          </div>
-          <div>
-            <p className="text-lg">History</p>
-            <SocialMediaIcons iconExtraClasses={["text-xl"]} />
-          </div>
+    <footer className="w-full py-8 mt-12">
+      <div className="container mx-auto flex items-center justify-center px-4">
+        <div className="text-center text-gray-500 text-sm font-semibold">
+          &copy; {new Date().getFullYear()} PyCon Hong Kong. All rights
+          reserved.
         </div>
-      </footer>
-    </section>
+      </div>
+    </footer>
   );
 }

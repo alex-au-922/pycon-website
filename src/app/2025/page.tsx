@@ -5,12 +5,16 @@ import Footer from "./components/utils/Footer";
 export default function Home() {
   return (
     <main
-      className="bg-cover bg-center min-h-screen "
-      style={{ backgroundImage: "url('/pyhk-bg.jpg')" }}
+      className="bg-cover bg-center min-h-screen w-full "
+      style={{
+        backgroundImage: "url('/background.png')",
+        backgroundSize: "120% 120%", // Increase to zoom in
+        backgroundPosition: "center",
+      }}
     >
       <NavBar />
       <Hero />
-      {/* <Footer /> */}
+      <Footer />
     </main>
   );
 }

@@ -9,8 +9,8 @@ export default function Hero() {
     <main className="container mx-auto h-screen flex justify-center items-center">
       <section className="px-4 w-full flex flex-col lg:flex-row justify-between items-center">
         <aside className="w-full lg:w-1/2 text-center lg:text-start">
-          <h1 className="text-5xl xl:text-6xl  mb-5 text-gray-600">
-            <small className="text-3xl xl:text-5xl font-bold text-gray-800 opacity-90">
+          <h1 className="text-5xl xl:text-7xl mb-5 text-gray-600 transition-all duration-200 hover:text-slate-500 hover:scale-105 cursor-pointer">
+            <small className="text-4xl xl:text-5xl font-bold text-gray-800 opacity-90 transition-all duration-200">
               PyCon HK 2025 is
             </small>
             <br />
