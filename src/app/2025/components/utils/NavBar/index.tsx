@@ -1,6 +1,5 @@
 import SocialMediaIcons from "../SocialMediaIcons";
 import NavBarLinks from "./Links";
-import Image from "next/image";
 
 export default async function NavBar() {
   return (
