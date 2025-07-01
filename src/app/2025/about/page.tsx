@@ -1,14 +1,13 @@
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import aboutUsImg from "../../../../public/pycon-about-us.jpeg";
+import aboutUsImg from "../../../../public/about-us.jpeg";
 
 export default async function About() {
   return (
     <div className="bg-gradient-to-br from-blue-700 via-blue-500 to-blue-300 -mt-20 text-gray-600">
       <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <div className="bg-white bg-opacity-90 rounded-xl shadow-xl p-8 md:p-12 relative mt-20">
-          <h1 className="font-bold text-4xl md:text-5xl mb-8 text-gray-800 text-center">
+          <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl mb-8 text-gray-800 text-center">
             About PyCon Hong Kong
           </h1>
 
@@ -23,7 +22,7 @@ export default async function About() {
             />
           </div>
 
-          <div className="px-8 space-y-6 text-gray-700 text-lg">
+          <div className="space-y-6 text-gray-700 text-base/7 md:text-lg text-justify">
             <p>
               PyCon Hong Kong (PyCon HK) is the leading Python conference in
               Hong Kong, bringing together Python enthusiasts to share their
@@ -64,17 +63,17 @@ export default async function About() {
               event since its founding, Mr. Law brings extensive expertise and
               leadership to the Python community. With over ten years as a
               software engineer at a Fortune 500 tech company, specializing in
-              server-side development and client/server/web infrastructure, he
-              offers a blend of technical proficiency and innovative vision.
+              server-side development and client / server / web infrastructure,
+              he offers a blend of technical proficiency and innovative vision.
               Under his guidance, PyCon HK 2025 is set to deliver an inspiring,
               high-impact event for Python enthusiasts worldwide.
             </p>
 
-            {/* <div className="mt-8">
+            <div className="mt-8">
               <h2 className="text-2xl font-bold text-blue-600 mb-4">
-                Follow us on social media:
+                Follow us on:
               </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
                 <Link
                   href="https://www.linkedin.com/company/pyconhk/"
                   target="_blank"
@@ -148,7 +147,7 @@ export default async function About() {
                   <span className="text-sm">github.com/pyconhk</span>
                 </Link>
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>

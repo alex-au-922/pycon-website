@@ -93,9 +93,9 @@ export default async function CallForActions() {
               Call for Proposals
             </h2>
             <p className="text-gray-600 mb-8">
-              Share your Python knowledge with the community. We're looking for
-              talks, tutorials, and workshops on a wide range of Python-related
-              topics, from beginner to advanced.
+              Share your Python knowledge with the community. We&apos;re looking
+              for talks, tutorials, and workshops on a wide range of
+              Python-related topics, from beginner to advanced.
             </p>
             <ul className="space-y-3 text-gray-600 mb-8">
               {callForProposalsTypes.map((item, index) => (
@@ -134,7 +134,7 @@ export default async function CallForActions() {
             <p className="text-gray-600 mb-8">
               Support the Python community and gain visibility for your brand.
               PyCon offers various sponsorship tiers designed to maximize your
-              organization's exposure.
+              organization&apos;s exposure.
             </p>
             <ul className="space-y-3 text-gray-600 mb-8">
               {callForSponsorshipsBenefits.map((item, index) => (

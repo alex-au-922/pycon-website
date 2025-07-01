@@ -4,11 +4,12 @@ export function Introduction() {
   return (
     <section id="introduction">
       <p className="mt-4">
-        The PyCon Hong Kong (referred to as "PyCon HK", "we", "us" and "our")
-        takes individuals' privacy seriously. This Statement explains our
+        The PyCon Hong Kong (referred to as &quot;PyCon HK&quot;,
+        &quot;we&quot;, &quot;us&quot; and &quot;our&quot;) takes
+        individuals&apos; privacy seriously. This Statement explains our
         policies and practices and applies to information collection and use
         including but not limited to while you are visiting and using
-        www.pycon.hk (the "Site") and related third party services.
+        www.pycon.hk (the &quot;Site&quot;) and related third party services.
       </p>
 
       <p className="mt-4">
@@ -38,36 +39,36 @@ export function InformationWeCollect() {
       </p>
 
       <ul className="mt-4 list-disc ml-6 space-y-2">
-        <li className="pl-2">Full name</li>
-        <li className="pl-2">Phone numbers</li>
-        <li className="pl-2">Email addresses</li>
-        <li className="pl-2">Other contact information</li>
-        <li className="pl-2">Payment information</li>
-        <li className="pl-2">
+        <li className="md:pl-2">Full name</li>
+        <li className="md:pl-2">Phone numbers</li>
+        <li className="md:pl-2">Email addresses</li>
+        <li className="md:pl-2">Other contact information</li>
+        <li className="md:pl-2">Payment information</li>
+        <li className="md:pl-2">
           Company, firm, organization, agency, or other entity information
         </li>
-        <li className="pl-2">Photograph</li>
-        <li className="pl-2">Biography</li>
-        <li className="pl-2">
+        <li className="md:pl-2">Photograph</li>
+        <li className="md:pl-2">Biography</li>
+        <li className="md:pl-2">
           Preference information, such as communications that you receive from
           us
         </li>
-        <li className="pl-2">Dietary preferences and requirements</li>
-        <li className="pl-2">
+        <li className="md:pl-2">Dietary preferences and requirements</li>
+        <li className="md:pl-2">
           Information that you provide for the purposes of attending meetings,
           events, webinars, and other programs
         </li>
-        <li className="pl-2">
+        <li className="md:pl-2">
           Any other information relating to you (or other individuals) which you
           may provide to us
         </li>
-        <li className="pl-2">
+        <li className="md:pl-2">
           Any communications you send to us, such as reports of issues,
           inquiries, concerns, or feedback about the Site or its content, will
           be collected and processed as part of our commitment to improving user
           experience.
         </li>
-        <li className="pl-2">
+        <li className="md:pl-2">
           We may collect information from optional surveys conducted
           periodically on our Site for research purposes, should you choose to
           participate or respond to them.
@@ -84,8 +85,8 @@ export function InformationWeCollect() {
         by your browser, including browser type and language, access times,
         referring website address, IP address, and clickstream data (actions
         taken on the Site), using automated tools like cookies and other common
-        technologies to enhance the Site's functionality, with further details
-        on cookies provided below.
+        technologies to enhance the Site&apos;s functionality, with further
+        details on cookies provided below.
       </p>
     </section>
   );
@@ -101,32 +102,32 @@ export function HowDoWeUseThePersonalInformationWeCollect() {
         We use the information you provide in the following ways:
       </p>
       <ul className="mt-4 list-disc ml-6 space-y-2">
-        <li className="pl-2">Provide the PyCon HK website to you</li>
-        <li className="pl-2">To enroll you for PyCon HK-related mailings</li>
-        <li className="pl-2">
+        <li className="md:pl-2">Provide the PyCon HK website to you</li>
+        <li className="md:pl-2">To enroll you for PyCon HK-related mailings</li>
+        <li className="md:pl-2">
           To register you for events, tutorials, and other services
         </li>
-        <li className="pl-2">
+        <li className="md:pl-2">
           To provide you with information about Python, PyCon HK, and events
           within PyCon HK
         </li>
-        <li className="pl-2">
+        <li className="md:pl-2">
           To allow you to connect with PyCon HK sponsors (opt-in only)
         </li>
-        <li className="pl-2">
+        <li className="md:pl-2">
           To communicate with you and to respond to your questions, inquiries,
           or concerns
         </li>
-        <li className="pl-2">
+        <li className="md:pl-2">
           To administer and improve the PyCon HK, including the websites,
           events, tutorials, and other services
         </li>
-        <li className="pl-2">
+        <li className="md:pl-2">
           To process your payment for the PyCon HK services and events
         </li>
-        <li className="pl-2">To prevent and detect fraud</li>
-        <li className="pl-2">To protect and enforce our legal rights</li>
-        <li className="pl-2">
+        <li className="md:pl-2">To prevent and detect fraud</li>
+        <li className="md:pl-2">To protect and enforce our legal rights</li>
+        <li className="md:pl-2">
           Complying with laws, regulations or codes of practice in or outside
           Hong Kong
         </li>
@@ -185,7 +186,7 @@ export function UseOfThirdPartyServices() {
         Specifically, we use:
       </p>
       <ul className="mt-4 list-disc ml-6 space-y-2">
-        <li className="pl-2">
+        <li className="md:pl-2">
           <p className="mt-4">
             Eventbrite, a leading global self-service ticketing platform that
             simplifies event registration and attendee management for organizers
@@ -201,7 +202,7 @@ export function UseOfThirdPartyServices() {
             </span>
           </p>
         </li>
-        <li className="pl-2">
+        <li className="md:pl-2">
           <p className="mt-4">
             UDomain, a Hong Kong-based internet services provider to host part
             of the PyCon HK website.
@@ -212,7 +213,7 @@ export function UseOfThirdPartyServices() {
             </span>
           </p>
         </li>
-        <li className="pl-2">
+        <li className="md:pl-2">
           <p className="mt-4">
             GitHub to host part of the PyCon HK website.
             <span className="ml-2 badge badge-info text-white hover:text-gray-300 transition-colors duration-200">
@@ -225,7 +226,7 @@ export function UseOfThirdPartyServices() {
             </span>
           </p>
         </li>
-        <li className="pl-2">
+        <li className="md:pl-2">
           <p className="mt-4">
             Pretalx, an open-source conference management tool designed to
             streamline the organization of events.
@@ -236,7 +237,7 @@ export function UseOfThirdPartyServices() {
             </span>
           </p>
         </li>
-        <li className="pl-2">
+        <li className="md:pl-2">
           <p className="mt-4">
             Substack, a platform that empowers writers and creators to publish
             newsletters.
@@ -294,13 +295,13 @@ export function Cookies() {
         <p className="mt-4">
           Most web browsers allow you to delete existing cookies, block their
           use, or receive notifications when cookies are set, but blocking
-          cookies may limit your ability to fully utilize the Site's features
-          and functionality. For more information on managing and deleting
-          cookies, including how to view active cookies, visit
-          <span>
-            <Link href="https://www.allaboutcookies.org/" target="_blank">
+          cookies may limit your ability to fully utilize the Site&apos;s
+          features and functionality. For more information on managing and
+          deleting cookies, including how to view active cookies, visit&nbsp;
+          <span className="text-blue-600 hover:text-blue-800 transition-colors duration-200">
+            <a href="https://www.allaboutcookies.org/" target="_blank">
               https://www.allaboutcookies.org
-            </Link>
+            </a>
           </span>
           . Note that cookies are essential for certain website features, such
           as maintaining session continuity.
@@ -343,26 +344,26 @@ export function YourDataPrivacyRights() {
       <p className="mt-4">You have the right:</p>
 
       <ul className="mt-4 list-disc ml-6 space-y-2">
-        <li className="pl-2">
+        <li className="md:pl-2">
           to check whether we hold personal data about you and to access such
           data;
         </li>
-        <li className="pl-2">to require us to correct inaccurate data;</li>
-        <li className="pl-2">
+        <li className="md:pl-2">to require us to correct inaccurate data;</li>
+        <li className="md:pl-2">
           to ascertain our policies and practices in relation to personal data
           and the kind of personal data held by us;
         </li>
-        <li className="pl-2">
+        <li className="md:pl-2">
           to request access to and rectification or erasure of your personal
           data;
         </li>
-        <li className="pl-2">
+        <li className="md:pl-2">
           to obtain restriction of processing or to object to processing of your
           personal data; and to the right to data portability.
         </li>
-        <li className="pl-2">
-          You have the right to lodge a complaint about the processing of their
-          personal data with their local data protection authority.
+        <li className="md:pl-2">
+          to lodge a complaint about the processing of their personal data with
+          their local data protection authority.
         </li>
       </ul>
 
@@ -377,7 +378,10 @@ export function YourDataPrivacyRights() {
         <br />
         PyCon HK
         <br />
-        E-mail: <Link href="mailto:pycon@pycon.hk">pycon@pycon.hk</Link>
+        E-mail:&nbsp;
+        <span className="text-blue-600 hover:text-blue-800 transition-colors duration-200">
+          <a href="mailto:pycon@pycon.hk">pycon@pycon.hk</a>
+        </span>
       </p>
 
       <p className="mt-4">

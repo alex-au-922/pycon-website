@@ -9,7 +9,7 @@ interface ClickableLinkProps {
   onClick?: () => void;
 }
 
-export default async function ClickableLink({
+export default function ClickableLink({
   href,
   className = "",
   isActive = false,
@@ -38,7 +38,7 @@ export default async function ClickableLink({
     <Link
       href={href}
       className={combinedStyles}
-      target={target || "_blank"}
+      target={target}
       onClick={onClick}
     >
       {title}
