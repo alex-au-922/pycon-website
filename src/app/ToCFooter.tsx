@@ -3,8 +3,12 @@ export default function ToCFooter() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-800 text-white py-4 text-center">
-      <p className="text-sm text-gray-400">©{currentYear} PyCon Hong Kong</p>
+    <footer className="w-full py-8">
+      <div className="container mx-auto flex items-center justify-center px-4">
+        <div className="text-center text-gray-200 text-sm font-semibold">
+          &copy; {currentYear} PyCon Hong Kong. All rights reserved.
+        </div>
+      </div>
     </footer>
   );
 }

@@ -54,7 +54,7 @@ export default async function SocialMediaIcons({
   iconExtraClasses = [],
 }: SocialMediaIconsProps) {
   return (
-    <div className={`flex ${spacing} mt-6`}>
+    <div className={`flex items-center ${spacing}`}>
       {socialMediaLinks.map(({ icon: Icon, href }) => (
         <a
           key={href}
