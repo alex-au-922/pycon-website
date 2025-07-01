@@ -1,44 +1,46 @@
-import { FaChevronDown, FaChevronUp } from "react-icons/fa6";
 import NavigationDropdown from "./Dropdown";
 import ClickableLink from "./ClickableLink";
+import React from "react";
 interface NavBarLink {
   label: string;
-  content: NavBarLink[] | string;
+  href?: string;
+  children?: NavBarLink[];
   isActive?: boolean;
 }
 
-const links: NavBarLink[] = [
+export const links: NavBarLink[] = [
   {
     label: "News",
-    content: "#news",
+    href: "#news",
     isActive: false,
   },
   {
     label: "Organizers",
-    content: "#Organizers",
+    href: "#Organizers",
     isActive: false,
   },
   {
     label: "Volunteers",
-    content: "#volunteers",
+    href: "#volunteers",
     isActive: false,
   },
   {
     label: "About",
-    content: "/about",
+    href: "/about",
     isActive: true,
   },
   {
     label: "Code of Conduct",
-    content: [
+    href: "/code-of-conduct",
+    children: [
       {
         label: "Enforcement Procedures",
-        content: "/code-of-conduct/enforcement-procedures",
+        href: "/code-of-conduct/staff-procedures",
         isActive: true,
       },
       {
         label: "Procedures for Reporting Incidents",
-        content: "/code-of-conduct/procedures-for-reporting-incidents",
+        href: "/code-of-conduct/attendee-reporting",
         isActive: true,
       },
     ] as NavBarLink[],
@@ -46,7 +48,7 @@ const links: NavBarLink[] = [
   },
   {
     label: "Contact Us",
-    content: "/contact-us",
+    href: process.env.NEXT_PUBLIC_CONTACT_US_URL,
     isActive: true,
   },
 ];
@@ -56,16 +58,24 @@ export default async function NavBarLinks() {
     <div className="flex items-center h-full text-gray-600">
       <ul className="flex space-x-8 xl:space-x-12 font-semibold text-base xl:text-lg">
         {links.map((link) => (
-          <li key={link.label} className="group">
-            {Array.isArray(link.content) ? (
-              <NavigationDropdown title={link.label}>
-                {link.content.map((subLink) => (
+          <React.Fragment key={`nav-${link.label}`}>
+            {Array.isArray(link.children) ? (
+              <NavigationDropdown
+                title={link.label}
+                titleHref={link.href}
+                titleClassName={
+                  link.isActive
+                    ? "after:content-[''] after:absolute after:left-1/2 after:-bottom-1 after:w-0 after:h-0.5 after:bg-current after:transition-all after:duration-300 after:-translate-x-1/2 hover:after:w-full"
+                    : ""
+                }
+              >
+                {link.children.map((subLink) => (
                   <li
-                    key={`${link.label}-${subLink.label}`}
+                    key={`nav-${link.label}-${subLink.label}`}
                     className="group relative"
                   >
                     <ClickableLink
-                      href={subLink.content as string}
+                      href={subLink.href as string}
                       title={subLink.label}
                       isActive={subLink.isActive}
                       className="hover:bg-gray-400/50"
@@ -74,18 +84,20 @@ export default async function NavBarLinks() {
                 ))}
               </NavigationDropdown>
             ) : (
-              <ClickableLink
-                href={link.content}
-                title={link.label}
-                isActive={link.isActive}
-                className={
-                  link.isActive
-                    ? "after:content-[''] after:absolute after:left-1/2 after:-bottom-1 after:w-0 after:h-0.5 after:bg-current after:transition-all after:duration-300 after:-translate-x-1/2 hover:after:w-full"
-                    : ""
-                }
-              />
+              <li key={`nav-${link.label}`} className="group">
+                <ClickableLink
+                  href={link.href as string}
+                  title={link.label}
+                  isActive={link.isActive}
+                  className={
+                    link.isActive
+                      ? "after:content-[''] after:absolute after:left-1/2 after:-bottom-1 after:w-0 after:h-0.5 after:bg-current after:transition-all after:duration-300 after:-translate-x-1/2 hover:after:w-full"
+                      : ""
+                  }
+                />
+              </li>
             )}
-          </li>
+          </React.Fragment>
         ))}
       </ul>
     </div>

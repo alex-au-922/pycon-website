@@ -9,7 +9,7 @@ interface ClickableLinkProps {
   onClick?: () => void;
 }
 
-export default async function ClickableLink({
+export default function ClickableLink({
   href,
   className = "",
   isActive = false,
