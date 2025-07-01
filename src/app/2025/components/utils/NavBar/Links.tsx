@@ -32,6 +32,11 @@ const links: NavBarLink[] = [
     label: "Code of Conduct",
     content: [
       {
+        label: "Code of Conduct",
+        content: "/code-of-conduct",
+        isActive: true,
+      },
+      {
         label: "Enforcement Procedures",
         content: "/code-of-conduct/enforcement-procedures",
         isActive: true,
@@ -60,10 +65,7 @@ export default async function NavBarLinks() {
             {Array.isArray(link.content) ? (
               <NavigationDropdown title={link.label}>
                 {link.content.map((subLink) => (
-                  <li
-                    key={`${link.label}-${subLink.label}`}
-                    className="group relative"
-                  >
+                  <li key={`${link.label}-${subLink.label}`} className="group relative">
                     <ClickableLink
                       href={subLink.content as string}
                       title={subLink.label}
