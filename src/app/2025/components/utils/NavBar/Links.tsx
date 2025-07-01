@@ -5,6 +5,7 @@ interface NavBarLink {
   label: string;
   content: NavBarLink[] | string;
   isActive?: boolean;
+  href?: string; // For clickable parent items in dropdowns
 }
 
 const links: NavBarLink[] = [
@@ -30,12 +31,8 @@ const links: NavBarLink[] = [
   },
   {
     label: "Code of Conduct",
+    href: "/code-of-conduct",
     content: [
-      {
-        label: "Code of Conduct",
-        content: "/code-of-conduct",
-        isActive: true,
-      },
       {
         label: "Enforcement Procedures",
         content: "/code-of-conduct/enforcement-procedures",
@@ -63,7 +60,7 @@ export default async function NavBarLinks() {
         {links.map((link) => (
           <li key={link.label} className="group">
             {Array.isArray(link.content) ? (
-              <NavigationDropdown title={link.label}>
+              <NavigationDropdown title={link.label} href={link.href}>
                 {link.content.map((subLink) => (
                   <li key={`${link.label}-${subLink.label}`} className="group relative">
                     <ClickableLink
