@@ -1,5 +1,6 @@
 import { FaChevronDown, FaChevronUp } from "react-icons/fa6";
 import NavigationDropdown from "./Dropdown";
+import ClickableLink from "./ClickableLink";
 interface NavBarLink {
   label: string;
   content: NavBarLink[] | string;
@@ -10,17 +11,17 @@ const links: NavBarLink[] = [
   {
     label: "News",
     content: "#news",
-    isActive: true,
+    isActive: false,
   },
   {
     label: "Organizers",
     content: "#Organizers",
-    isActive: true,
+    isActive: false,
   },
   {
     label: "Volunteers",
     content: "#volunteers",
-    isActive: true,
+    isActive: false,
   },
   {
     label: "About",
@@ -63,24 +64,26 @@ export default async function NavBarLinks() {
                     key={`${link.label}-${subLink.label}`}
                     className="group relative"
                   >
-                    <a
+                    <ClickableLink
                       href={subLink.content as string}
-                      className={`flex items-center relative transition-all duration-200 ${
-                        subLink.isActive ? "text-gray-600" : "text-white"
-                      } hover:text-gray-800`}
-                    >
-                      {subLink.label}
-                    </a>
+                      title={subLink.label}
+                      isActive={subLink.isActive}
+                      className="hover:bg-gray-400/50"
+                    />
                   </li>
                 ))}
               </NavigationDropdown>
             ) : (
-              <a
+              <ClickableLink
                 href={link.content}
-                className={`flex items-center relative transition-all duration-200 hover:text-gray-800`}
-              >
-                {link.label}
-              </a>
+                title={link.label}
+                isActive={link.isActive}
+                className={
+                  link.isActive
+                    ? "after:content-[''] after:absolute after:left-1/2 after:-bottom-1 after:w-0 after:h-0.5 after:bg-current after:transition-all after:duration-300 after:-translate-x-1/2 hover:after:w-full"
+                    : ""
+                }
+              />
             )}
           </li>
         ))}

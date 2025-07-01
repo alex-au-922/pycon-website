@@ -15,7 +15,7 @@ function HeroBackground({ children, className = "" }: HeroBackgroundProps) {
     <div
       className={`relative min-w-full min-h-full bg-gradient-to-br from-cyan-400 via-green-300 to-yellow-300 overflow-hidden ${className}`}
     >
-      <Image
+      {/* <Image
         src="/background.png"
         alt="Background"
         fill
@@ -26,7 +26,7 @@ function HeroBackground({ children, className = "" }: HeroBackgroundProps) {
         style={{
           objectPosition: "center",
         }}
-      />
+      /> */}
       <div className="relative z-10 w-full h-full">{children}</div>
     </div>
   );
@@ -39,7 +39,7 @@ export default function Hero() {
         <HeroBackground className="w-full h-full">
           <div className="flex space-x-8 w-full h-full items-center container mx-auto">
             <aside className="w-full lg:w-1/2 text-center lg:text-start">
-              <h1 className="text-5xl xl:text-6xl mb-5 text-gray-600 transition-all duration-200 hover:text-slate-500 hover:scale-105 cursor-pointer">
+              <h1 className="text-5xl xl:text-6xl mb-5 text-gray-600">
                 <small className="text-4xl xl:text-5xl font-bold text-gray-800 opacity-90 transition-all duration-200">
                   PyCon HK 2025 is
                 </small>

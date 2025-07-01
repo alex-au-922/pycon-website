@@ -34,10 +34,8 @@ export default function BannerImageSlide() {
             src={src}
             alt={`Event ${idx + 1}`}
             fill
-            className={`object-cover rounded-2xl transition-transform duration-400 ${
-              idx === current
-                ? "opacity-100 group-hover:scale-105"
-                : "opacity-0"
+            className={`object-cover rounded-2xl ${
+              idx === current ? "opacity-100" : "opacity-0"
             }`}
             priority={idx === 0}
           />
