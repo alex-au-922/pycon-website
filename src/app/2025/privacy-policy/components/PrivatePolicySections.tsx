@@ -4,11 +4,12 @@ export function Introduction() {
   return (
     <section id="introduction">
       <p className="mt-4">
-        The PyCon Hong Kong (referred to as "PyCon HK", "we", "us" and "our")
-        takes individuals' privacy seriously. This Statement explains our
+        The PyCon Hong Kong (referred to as &quot;PyCon HK&quot;,
+        &quot;we&quot;, &quot;us&quot; and &quot;our&quot;) takes
+        individuals&apos; privacy seriously. This Statement explains our
         policies and practices and applies to information collection and use
         including but not limited to while you are visiting and using
-        www.pycon.hk (the "Site") and related third party services.
+        www.pycon.hk (the &quot;Site&quot;) and related third party services.
       </p>
 
       <p className="mt-4">
@@ -84,8 +85,8 @@ export function InformationWeCollect() {
         by your browser, including browser type and language, access times,
         referring website address, IP address, and clickstream data (actions
         taken on the Site), using automated tools like cookies and other common
-        technologies to enhance the Site's functionality, with further details
-        on cookies provided below.
+        technologies to enhance the Site&apos;s functionality, with further
+        details on cookies provided below.
       </p>
     </section>
   );
@@ -294,9 +295,9 @@ export function Cookies() {
         <p className="mt-4">
           Most web browsers allow you to delete existing cookies, block their
           use, or receive notifications when cookies are set, but blocking
-          cookies may limit your ability to fully utilize the Site's features
-          and functionality. For more information on managing and deleting
-          cookies, including how to view active cookies, visit&nbsp;
+          cookies may limit your ability to fully utilize the Site&apos;s
+          features and functionality. For more information on managing and
+          deleting cookies, including how to view active cookies, visit&nbsp;
           <span className="text-blue-600 hover:text-blue-800 transition-colors duration-200">
             <a href="https://www.allaboutcookies.org/" target="_blank">
               https://www.allaboutcookies.org

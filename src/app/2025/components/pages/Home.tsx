@@ -1,7 +1,6 @@
 import { Itim } from "next/font/google";
 import CountdownTimer from "./CountdownTimer";
 import BannerImageSlide from "./BannerImageSlide";
-import Image from "next/image";
 
 const itim = Itim({ weight: ["400"], subsets: ["latin"] });
 

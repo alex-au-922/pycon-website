@@ -51,6 +51,7 @@ const CountdownTimer = ({ launchDate }: { launchDate: string }) => {
     const interval = setInterval(() => {
       setTimeLeft(getTimeLeft(launchDate));
     }, 1000);
+    return () => clearInterval(interval);
   }, [launchDate]);
 
   return (
