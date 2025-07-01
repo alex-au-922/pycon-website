@@ -62,7 +62,7 @@ const CallForActions = async () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-blue-50">
+    <section id="call-for-actions" className="min-h-screen bg-gradient-to-b from-white to-blue-50">
       {/* Hero Section */}
       <div className="py-16 px-4 sm:px-6 lg:px-8 text-center">
         <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6">
@@ -189,7 +189,7 @@ const CallForActions = async () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -10,7 +10,7 @@ interface HeroBackgroundProps {
   className?: string;
 }
 
-function HeroBackground({ children, className = "" }: HeroBackgroundProps) {
+function HomeBackground({ children, className = "" }: HeroBackgroundProps) {
   return (
     <div
       className={`relative min-w-full min-h-full bg-gradient-to-br from-cyan-400 via-green-300 to-yellow-300 overflow-hidden ${className}`}
@@ -32,10 +32,10 @@ function HeroBackground({ children, className = "" }: HeroBackgroundProps) {
   );
 }
 
-export default function Hero() {
+export default function Home() {
   return (
-    <section className="w-full h-screen -mt-20">
-      <HeroBackground className="w-full h-full">
+    <section id="home" className="w-full h-screen">
+      <HomeBackground className="w-full h-full">
         <div className="flex space-x-8 w-full h-full items-center container mx-auto">
           <aside className="w-full lg:w-1/2 text-center lg:text-start">
             <h1 className="text-5xl xl:text-6xl mb-5 text-gray-600">
@@ -68,7 +68,7 @@ export default function Hero() {
             <BannerImageSlide />
           </aside>
         </div>
-      </HeroBackground>
+      </HomeBackground>
     </section>
   );
 }

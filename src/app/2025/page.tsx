@@ -1,15 +1,11 @@
 import CallForActions from "./components/pages/CallForActions";
-import Hero from "./components/pages/Hero";
-import NavBar from "./components/utils/NavBar";
+import Home from "./components/pages/Home";
 
-export default function Home() {
+export default function Page() {
   return (
-    <>
-      <Hero />
+    <div className="w-full min-h-screen -mt-20">
+      <Home />
       <CallForActions />
-      {/* <News />
-      <Organizers />
-      <Volunteers /> */}
-    </>
+    </div>
   );
 }

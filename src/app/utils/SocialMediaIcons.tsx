@@ -61,7 +61,7 @@ export default async function SocialMediaIcons({
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          className="transition-transform duration-200 hover:scale-110"
+          className="transition-transform duration-200"
         >
           <Icon
             className={`font-bold ${iconColor} ${iconHoverColor} transition-colors ${iconExtraClassName}`}
