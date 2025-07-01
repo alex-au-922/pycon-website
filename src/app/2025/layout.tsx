@@ -26,7 +26,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className={montserrat.className}>
       {/* NavBar is now in the layout and will appear on all 2025 pages */}
-      <NavBar />
+      {/* <NavBar /> */}
 
       {/* Main content */}
       <main>{children}</main>

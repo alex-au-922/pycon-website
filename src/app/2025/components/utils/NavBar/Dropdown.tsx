@@ -5,7 +5,7 @@ interface NavigationDropdownProps {
   children: React.ReactNode;
 }
 
-export default function NavigationDropdown({
+export default async function NavigationDropdown({
   title,
   children,
 }: NavigationDropdownProps) {

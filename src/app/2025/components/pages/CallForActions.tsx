@@ -4,6 +4,7 @@ import { BsArrowRight } from "react-icons/bs";
 import { MdCheck } from "react-icons/md";
 import { HiOutlineCurrencyDollar } from "react-icons/hi";
 import ActionCard from "../utils/ActionCards";
+import Link from "next/link";
 
 interface ImportantDates {
   title: string;
@@ -15,60 +16,63 @@ interface FAQ {
   answer: string;
 }
 
-const CallForActions = async () => {
-  const callForProposalsTypes = [
-    "Talks (15-30 minutes)",
-    "Workshops (1.5 hours)",
-    "Posters and Lightning Talks",
-  ];
+const callForProposalsTypes = [
+  "Talks (15-30 minutes)",
+  "Workshops (1.5 hours)",
+  "Posters and Lightning Talks",
+];
 
-  const callForSponsorshipsBenefits = [
-    "Booth space in the expo hall",
-    "Logo placement on website and materials",
-    "Sponsored Talks",
-  ];
+const callForSponsorshipsBenefits = [
+  "Booth space in the expo hall",
+  "Logo placement on website and materials",
+  "Sponsored Talks",
+];
 
-  const importantDates: ImportantDates[] = [
-    {
-      title: "Proposal Deadline",
-      date: "July 6, 2025",
-    },
-    {
-      title: "Conference Date",
-      date: "Oct 10, 2025",
-    },
-    {
-      title: "Sprint Date",
-      date: "Oct 11, 2025",
-    },
-  ];
+const importantDates: ImportantDates[] = [
+  {
+    title: "Proposal Deadline",
+    date: "July 6, 2025",
+  },
+  {
+    title: "Conference Date",
+    date: "Oct 10, 2025",
+  },
+  {
+    title: "Sprint Date",
+    date: "Oct 11, 2025",
+  },
+];
 
-  const faqs: FAQ[] = [
-    {
-      question: "What types of proposals are you looking for?",
-      answer:
-        "We welcome proposals on all Python-related topics, including but not limited to web development, data science, machine learning, DevOps, testing, education, and community initiatives.",
-    },
-    {
-      question: "What are the benefits of sponsoring?",
-      answer:
-        "Sponsors gain visibility within the Python community, opportunities to recruit talent, brand exposure, and demonstrate support for open source software.",
-    },
-    {
-      question: "Is financial aid available for speakers?",
-      answer:
-        "Yes, PyCon offers financial assistance to speakers who need support with travel and accommodation. More details are available in the proposal submission process.",
-    },
-  ];
+const faqs: FAQ[] = [
+  {
+    question: "What types of proposals are you looking for?",
+    answer:
+      "We welcome proposals on all Python-related topics, including but not limited to web development, data science, machine learning, DevOps, testing, education, and community initiatives.",
+  },
+  {
+    question: "What are the benefits of sponsoring?",
+    answer:
+      "Sponsors gain visibility within the Python community, opportunities to recruit talent, brand exposure, and demonstrate support for open source software.",
+  },
+  {
+    question: "Is financial aid available for speakers?",
+    answer:
+      "Yes, PyCon offers financial assistance to speakers who need support with travel and accommodation. More details are available in the proposal submission process.",
+  },
+];
 
+export default async function CallForActions() {
   return (
-    <section id="call-for-actions" className="min-h-screen bg-gradient-to-b from-white to-blue-50">
+    <section
+      id="call-for-actions"
+      className="min-h-screen bg-gradient-to-b from-white to-blue-50 px-8"
+    >
       {/* Hero Section */}
       <div className="py-16 px-4 sm:px-6 lg:px-8 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-900 mb-6">
           Be Part of PyCon 2025
         </h1>
-        <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+        <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
           Join the Python community and contribute to making PyCon 2025 an
           exceptional experience for everyone.
         </p>
@@ -76,7 +80,7 @@ const CallForActions = async () => {
 
       {/* Main Content */}
       <div className="max-w-7xl mx-auto pb-20 px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-16">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 text-sm md:text-base max-w-144 lg:max-w-screen mx-auto">
           <ActionCard
             topColorClassName="bg-blue-600"
             Icon={
@@ -85,7 +89,7 @@ const CallForActions = async () => {
               </div>
             }
           >
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
               Call for Proposals
             </h2>
             <p className="text-gray-600 mb-8">
@@ -95,23 +99,25 @@ const CallForActions = async () => {
             </p>
             <ul className="space-y-3 text-gray-600 mb-8">
               {callForProposalsTypes.map((item, index) => (
-                <li key={index} className="flex items-center gap-2">
-                  <MdCheck className="text-blue-600" />
+                <li key={index} className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-4 h-4 relative top-0.5">
+                    <MdCheck className="text-blue-600 w-full h-full" />
+                  </div>
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
-            <a
+            <Link
               href={process.env.NEXT_PUBLIC_CALL_FOR_PROPOSALS_URL}
               rel="noopener noreferrer"
               target="_blank"
-              className="inline-flex items-center gap-2 justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200"
+              className="text-sm md:text-base inline-flex items-center gap-2 justify-center px-6 py-3 border border-transparent font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200"
             >
               Submit a Proposal
               <span>
                 <BsArrowRight className="text-xl" />
               </span>
-            </a>
+            </Link>
           </ActionCard>
 
           <ActionCard
@@ -122,7 +128,7 @@ const CallForActions = async () => {
               </div>
             }
           >
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
               Call for Sponsorships
             </h2>
             <p className="text-gray-600 mb-8">
@@ -132,37 +138,44 @@ const CallForActions = async () => {
             </p>
             <ul className="space-y-3 text-gray-600 mb-8">
               {callForSponsorshipsBenefits.map((item, index) => (
-                <li key={index} className="flex items-center gap-2">
-                  <MdCheck className="text-yellow-500" />
+                <li key={index} className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-4 h-4 relative top-0.5">
+                    <MdCheck className="text-yellow-500 w-full h-full" />
+                  </div>
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
-            <a
+            <Link
               href={process.env.NEXT_PUBLIC_CALL_FOR_SPONSORSHIPS_URL}
               rel="noopener noreferrer"
               target="_blank"
-              className="inline-flex items-center gap-2 justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-yellow-500 hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 transition-colors duration-200"
+              className="text-sm md:text-base inline-flex items-center gap-2 justify-center px-6 py-3 border border-transparent font-medium rounded-md text-white bg-yellow-500 hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 transition-colors duration-200"
             >
               Become a Sponsor
               <span>
                 <BsArrowRight className="text-xl" />
               </span>
-            </a>
+            </Link>
           </ActionCard>
         </div>
 
+        {/* Important Dates */}
         <div className="mt-16 text-center">
           <div className="px-4 py-8 bg-gradient-to-r from-blue-500 to-blue-700 rounded-xl">
-            <h3 className="text-2xl font-bold mb-4 text-white">Key Dates</h3>
-            <div className="flex flex-col md:flex-row justify-center gap-6">
+            <h3 className="text-xl md:text-2xl font-bold mb-4 text-white">
+              Key Dates
+            </h3>
+            <div className="flex flex-col lg:flex-row justify-center gap-6">
               {importantDates.map((date, index) => (
                 <div
                   key={index}
                   className="bg-white bg-opacity-10 p-4 rounded-lg flex-1 text-gray-600"
                 >
-                  <h4 className="font-semibold text-lg">{date.title}</h4>
-                  <p>{date.date}</p>
+                  <h4 className="font-semibold text-base md:text-lg">
+                    {date.title}
+                  </h4>
+                  <p className="text-sm md:text-base">{date.date}</p>
                 </div>
               ))}
             </div>
@@ -171,7 +184,7 @@ const CallForActions = async () => {
 
         {/* FAQ Section */}
         <div className="mt-16 text-gray-600">
-          <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+          <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 text-center">
             Frequently Asked Questions
           </h3>
           <div className="space-y-4">
@@ -180,10 +193,10 @@ const CallForActions = async () => {
                 key={index}
                 className="bg-white p-6 rounded-lg shadow-md"
               >
-                <summary className="font-semibold text-lg cursor-pointer">
+                <summary className="font-semibold text-base md:text-lg cursor-pointer">
                   {faq.question}
                 </summary>
-                <p className="mt-3">{faq.answer}</p>
+                <p className="mt-3 text-sm md:text-base">{faq.answer}</p>
               </details>
             ))}
           </div>
@@ -191,6 +204,4 @@ const CallForActions = async () => {
       </div>
     </section>
   );
-};
-
-export default CallForActions;
+}

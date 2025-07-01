@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function Introduction() {
   return (
     <section id="introduction">
@@ -25,7 +27,7 @@ export function Introduction() {
 export function InformationWeCollect() {
   return (
     <section id="information-we-collect">
-      <h2 className="text-2xl font-bold text-blue-600 mb-4">
+      <h2 className="text-xl md:text-2xl font-bold text-blue-600 mb-4">
         1. Information We Collect
       </h2>
       <p className="mt-4">
@@ -92,7 +94,7 @@ export function InformationWeCollect() {
 export function HowDoWeUseThePersonalInformationWeCollect() {
   return (
     <section id="how-we-use-personal-information">
-      <h2 className="text-2xl font-bold text-blue-600 mb-4">
+      <h2 className="text-xl md:text-2xl font-bold text-blue-600 mb-4">
         2. How Do We Use The Personal Information We Collect
       </h2>
       <p className="mt-2">
@@ -136,7 +138,7 @@ export function HowDoWeUseThePersonalInformationWeCollect() {
 export function WhoDoWeShareYourPersonalInformationWith() {
   return (
     <section id="who-we-share-your-personal-information-with">
-      <h2 className="text-2xl font-bold text-blue-600 mb-4">
+      <h2 className="text-xl md:text-2xl font-bold text-blue-600 mb-4">
         3. Who Do We Share Your Personal Information With?
       </h2>
       <p className="mt-4">
@@ -174,7 +176,7 @@ export function WhoDoWeShareYourPersonalInformationWith() {
 export function UseOfThirdPartyServices() {
   return (
     <section id="use-of-third-party-services">
-      <h2 className="text-2xl font-bold text-blue-600 mb-4">
+      <h2 className="text-xl md:text-2xl font-bold text-blue-600 mb-4">
         4. Use of Third Party Services
       </h2>
       <p className="mt-4">
@@ -189,13 +191,13 @@ export function UseOfThirdPartyServices() {
             simplifies event registration and attendee management for organizers
             worldwide. Your disclosure of personal information to Eventbrite is
             governed by their Privacy Policy.
-            <span className="ml-2 badge badge-info text-white hover:text-gray-400 transition-colors duration-200">
-              <a
+            <span className="ml-2 badge badge-info text-white hover:text-gray-300 transition-colors duration-200">
+              <Link
                 href="https://www.eventbrite.com/help/en-us/articles/460838/eventbrite-privacy-policy/"
                 target="_blank"
               >
                 Eventbrite Privacy Policy
-              </a>
+              </Link>
             </span>
           </p>
         </li>
@@ -203,23 +205,23 @@ export function UseOfThirdPartyServices() {
           <p className="mt-4">
             UDomain, a Hong Kong-based internet services provider to host part
             of the PyCon HK website.
-            <span>
-              <a href="https://www.udomain.hk/en/privacy" target="_blank">
+            <span className="ml-2 badge badge-info text-white hover:text-gray-300 transition-colors duration-200">
+              <Link href="https://www.udomain.hk/en/privacy" target="_blank">
                 UDomain Privacy Policy
-              </a>
+              </Link>
             </span>
           </p>
         </li>
         <li className="pl-2">
           <p className="mt-4">
             GitHub to host part of the PyCon HK website.
-            <span>
-              <a
+            <span className="ml-2 badge badge-info text-white hover:text-gray-300 transition-colors duration-200">
+              <Link
                 href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
                 target="_blank"
               >
-                GitHub General Privacy Statement
-              </a>
+                GitHub Privacy Statement
+              </Link>
             </span>
           </p>
         </li>
@@ -227,10 +229,10 @@ export function UseOfThirdPartyServices() {
           <p className="mt-4">
             Pretalx, an open-source conference management tool designed to
             streamline the organization of events.
-            <span>
-              <a href="https://pretalx.com/p/privacy" target="_blank">
+            <span className="ml-2 badge badge-info text-white hover:text-gray-300 transition-colors duration-200">
+              <Link href="https://pretalx.com/p/privacy" target="_blank">
                 Pretalx Privacy
-              </a>
+              </Link>
             </span>
           </p>
         </li>
@@ -238,10 +240,10 @@ export function UseOfThirdPartyServices() {
           <p className="mt-4">
             Substack, a platform that empowers writers and creators to publish
             newsletters.
-            <span>
-              <a href="https://substack.com/privacy" target="_blank">
+            <span className="ml-2 badge badge-info text-white hover:text-gray-300 transition-colors duration-200">
+              <Link href="https://substack.com/privacy" target="_blank">
                 Substack Privacy Policy
-              </a>
+              </Link>
             </span>
           </p>
         </li>
@@ -253,9 +255,11 @@ export function UseOfThirdPartyServices() {
 export function Cookies() {
   return (
     <section id="cookies">
-      <h2 className="text-2xl font-bold text-blue-600 mb-4">5. Cookies</h2>
+      <h2 className="text-xl md:text-2xl font-bold text-blue-600 mb-4">
+        5. Cookies
+      </h2>
       <div className="mt-4">
-        <h3 className="text-lg font-semibold text-gray-800">
+        <h3 className="text-base md:text-lg font-semibold text-gray-800">
           Cookies Overview
         </h3>
         <p className="mt-2">
@@ -270,7 +274,9 @@ export function Cookies() {
         </p>
       </div>
       <div className="mt-4">
-        <h3 className="text-lg font-semibold text-gray-800">Use of Cookies</h3>
+        <h3 className="text-base md:text-lg font-semibold text-gray-800">
+          Use of Cookies
+        </h3>
         <p className="mt-2">
           We utilize cookies to gain insights into how our Site is used and to
           understand user preferences, enabling us to enhance our services. We
@@ -282,7 +288,7 @@ export function Cookies() {
       </div>
 
       <div className="mt-4">
-        <h3 className="text-lg font-semibold text-gray-800">
+        <h3 className="text-base md:text-lg font-semibold text-gray-800">
           Managing Cookies
         </h3>
         <p className="mt-4">
@@ -292,9 +298,9 @@ export function Cookies() {
           and functionality. For more information on managing and deleting
           cookies, including how to view active cookies, visit
           <span>
-            <a href="https://www.allaboutcookies.org/" target="_blank">
+            <Link href="https://www.allaboutcookies.org/" target="_blank">
               https://www.allaboutcookies.org
-            </a>
+            </Link>
           </span>
           . Note that cookies are essential for certain website features, such
           as maintaining session continuity.
@@ -307,7 +313,9 @@ export function Cookies() {
 export function Hyperlinks() {
   return (
     <section id="hyperlinks">
-      <h2 className="text-2xl font-bold text-blue-600 mb-4">6. Hyperlinks</h2>
+      <h2 className="text-xl md:text-2xl font-bold text-blue-600 mb-4">
+        6. Hyperlinks
+      </h2>
       <p className="mt-4">
         When you click on an advertisement or hyperlink directing to an external
         website, you will exit our Site to another destination. We are not
@@ -322,7 +330,7 @@ export function Hyperlinks() {
 export function YourDataPrivacyRights() {
   return (
     <section id="your-data-privacy-rights">
-      <h2 className="text-2xl font-bold text-blue-600 mb-4">
+      <h2 className="text-xl md:text-2xl font-bold text-blue-600 mb-4">
         7. Your Data Privacy Rights
       </h2>
       <p className="mt-4">
@@ -369,7 +377,7 @@ export function YourDataPrivacyRights() {
         <br />
         PyCon HK
         <br />
-        E-mail: <a href="mailto:pycon@pycon.hk">pycon@pycon.hk</a>
+        E-mail: <Link href="mailto:pycon@pycon.hk">pycon@pycon.hk</Link>
       </p>
 
       <p className="mt-4">
