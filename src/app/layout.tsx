@@ -19,7 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en_US">
-      <body className={`${montserrat.className}`}>{children}</body>
+      <body className={`${montserrat.className}`}>
+        {children}
+        <ToCFooter />
+      </body>
     </html>
   );
 }
