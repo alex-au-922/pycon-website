@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import NavBar from "./components/utils/NavBar";
-import Footer from "./components/utils/Footer";
 import "@/styles/globals.css";
 
 import { Montserrat } from "next/font/google";
@@ -31,8 +30,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
       {/* Main content */}
       <main className="flex-grow">{children}</main>
-
-      {/* Footer */}
     </div>
   );
 }

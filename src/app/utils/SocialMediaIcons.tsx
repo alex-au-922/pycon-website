@@ -12,7 +12,7 @@ interface SocialMediaIconsProps {
   spacing?: string;
   iconColor?: string;
   iconHoverColor?: string;
-  iconExtraClasses?: string[];
+  iconExtraClassName?: string;
 }
 
 interface SocialMediaLink {
@@ -51,7 +51,7 @@ export default async function SocialMediaIcons({
   spacing = "space-x-4",
   iconColor = "text-gray-600",
   iconHoverColor = "hover:text-gray-800",
-  iconExtraClasses = [],
+  iconExtraClassName = "",
 }: SocialMediaIconsProps) {
   return (
     <div className={`flex items-center ${spacing}`}>
@@ -64,9 +64,7 @@ export default async function SocialMediaIcons({
           className="transition-transform duration-200 hover:scale-110"
         >
           <Icon
-            className={`font-bold text-lg ${iconColor} ${iconHoverColor} transition-colors ${iconExtraClasses.join(
-              " "
-            )}`}
+            className={`font-bold ${iconColor} ${iconHoverColor} transition-colors ${iconExtraClassName}`}
           />
         </a>
       ))}
