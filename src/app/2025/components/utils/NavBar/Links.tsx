@@ -54,7 +54,7 @@ const links: NavBarLink[] = [
 export default async function NavBarLinks() {
   return (
     <div className="flex items-center h-full text-gray-600">
-      <ul className="flex space-x-8 xl:space-x-12 font-semibold text-sm xl:text-lg">
+      <ul className="flex space-x-8 xl:space-x-12 font-semibold text-base xl:text-lg">
         {links.map((link) => (
           <li key={link.label} className="group">
             {Array.isArray(link.content) ? (

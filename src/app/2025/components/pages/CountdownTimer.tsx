@@ -54,7 +54,7 @@ const CountdownTimer = ({ launchDate }: { launchDate: string }) => {
   }, [launchDate]);
 
   return (
-    <div className="flex justify-center lg:justify-start mt-10 gap-3 opacity-85">
+    <div className="flex justify-center lg:justify-start mt-10 gap-3 opacity-85 px-8 lg:px-0">
       <span className="flex flex-col justify-center items-center bg-gray-800 text-white text-3xl lg:text-5xl w-36 py-3 shadow-lg rounded-lg">
         {timeLeft.days}
         <small className="text-xs lg:text-sm uppercase font-semibold text-white">

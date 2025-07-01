@@ -38,7 +38,7 @@ export default async function ClickableLink({
     <Link
       href={href}
       className={combinedStyles}
-      target={target || "_blank"}
+      target={target}
       onClick={onClick}
     >
       {title}
