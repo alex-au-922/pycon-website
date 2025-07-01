@@ -12,7 +12,7 @@ export default function NavigationDropdown({
   return (
     <div className="dropdown dropdown-hover group">
       <div tabIndex={0} className="flex items-center gap-1">
-        <span>{title}</span>
+        <span className="text-gray-800 font-bold">{title}</span>
         <span className="text-sm flex items-center justify-center">
           <FaChevronUp className="hidden group-hover:inline-block" />
           <FaChevronDown className="inline-block group-hover:hidden" />

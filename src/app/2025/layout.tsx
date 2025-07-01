@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import NavBar from "./components/utils/NavBar";
-import Footer from "./components/utils/Footer";
 import "@/styles/globals.css";
 
 import { Montserrat } from "next/font/google";
@@ -25,14 +24,12 @@ export const metadata: Metadata = {
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className={`${montserrat.className} min-h-screen flex flex-col`}>
+    <div className={montserrat.className}>
       {/* NavBar is now in the layout and will appear on all 2025 pages */}
       <NavBar />
 
       {/* Main content */}
-      <main className="flex-grow">{children}</main>
-
-      {/* Footer */}
+      <main>{children}</main>
     </div>
   );
 }
