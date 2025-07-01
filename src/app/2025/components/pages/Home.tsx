@@ -32,7 +32,7 @@ function HomeBackground({ children, className = "" }: HeroBackgroundProps) {
   );
 }
 
-export default function Home() {
+export default async function Home() {
   return (
     <section id="home" className="w-full h-screen">
       <HomeBackground className="w-full h-full">
