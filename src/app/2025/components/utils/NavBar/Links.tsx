@@ -1,59 +1,105 @@
-import { FaChevronDown } from "react-icons/fa6";
+import NavigationDropdown from "./Dropdown";
+import ClickableLink from "./ClickableLink";
+import React from "react";
 interface NavBarLink {
   label: string;
   href?: string;
+  children?: NavBarLink[];
   isActive?: boolean;
 }
 
-const links: NavBarLink[] = [
+export const links: NavBarLink[] = [
   {
-    label: "Event Details",
-    href: "#event-details",
-    isActive: true,
+    label: "News",
+    href: "#news",
+    isActive: false,
+  },
+  {
+    label: "Organizers",
+    href: "#Organizers",
+    isActive: false,
   },
   {
     label: "Volunteers",
     href: "#volunteers",
-    isActive: true,
+    isActive: false,
   },
   {
-    label: "Proposals",
-    href: "#proposals",
-    isActive: true,
-  },
-  {
-    label: "Sponsors",
-    href: "#sponsors",
-    isActive: true,
-  },
-  {
-    label: "Reviewers",
-    href: "#reviewers",
+    label: "About",
+    href: "/about",
     isActive: true,
   },
   {
     label: "Code of Conduct",
-    href: "#code-of-conduct",
+    href: "/code-of-conduct",
+    children: [
+      {
+        label: "Enforcement Procedures",
+        href: "/code-of-conduct/staff-procedures",
+        isActive: true,
+      },
+      {
+        label: "Procedures for Reporting Incidents",
+        href: "/code-of-conduct/attendee-reporting",
+        isActive: true,
+      },
+    ] as NavBarLink[],
+    isActive: true,
+  },
+  {
+    label: "Contact Us",
+    href: process.env.NEXT_PUBLIC_CONTACT_US_URL,
     isActive: true,
   },
 ];
 
 export default async function NavBarLinks() {
   return (
-    <ul className="flex space-x-8 xl:space-x-12 mt-6 font-semibold text-sm xl:text-lg">
-      {links.map((link) => (
-        <li key={link.label}>
-          <a
-            href={link.href}
-            className={`flex items-center relative transition-all duration-200 ${
-              link.isActive ? "text-gray-600" : "text-white"
-            } hover:text-gray-800 hover:scale-90`}
-          >
-            {link.label}
-            <FaChevronDown className="ml-1 text-xs" />
-          </a>
-        </li>
-      ))}
-    </ul>
+    <div className="flex items-center h-full text-gray-600">
+      <ul className="flex space-x-8 xl:space-x-12 font-semibold text-base xl:text-lg">
+        {links.map((link) => (
+          <React.Fragment key={`nav-${link.label}`}>
+            {Array.isArray(link.children) ? (
+              <NavigationDropdown
+                title={link.label}
+                titleHref={link.href}
+                titleClassName={
+                  link.isActive
+                    ? "after:content-[''] after:absolute after:left-1/2 after:-bottom-1 after:w-0 after:h-0.5 after:bg-current after:transition-all after:duration-300 after:-translate-x-1/2 hover:after:w-full"
+                    : ""
+                }
+              >
+                {link.children.map((subLink) => (
+                  <li
+                    key={`nav-${link.label}-${subLink.label}`}
+                    className="group relative"
+                  >
+                    <ClickableLink
+                      href={subLink.href as string}
+                      title={subLink.label}
+                      isActive={subLink.isActive}
+                      className="hover:bg-gray-400/50"
+                    />
+                  </li>
+                ))}
+              </NavigationDropdown>
+            ) : (
+              <li key={`nav-${link.label}`} className="group">
+                <ClickableLink
+                  href={link.href as string}
+                  title={link.label}
+                  isActive={link.isActive}
+                  className={
+                    link.isActive
+                      ? "after:content-[''] after:absolute after:left-1/2 after:-bottom-1 after:w-0 after:h-0.5 after:bg-current after:transition-all after:duration-300 after:-translate-x-1/2 hover:after:w-full"
+                      : ""
+                  }
+                />
+              </li>
+            )}
+          </React.Fragment>
+        ))}
+      </ul>
+    </div>
   );
 }

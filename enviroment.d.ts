@@ -7,10 +7,9 @@ declare global {
       NEXT_PUBLIC_CURRENT_YEAR: string;
 
       // Conference Links
-      NEXT_PUBLIC_REGISTRATION_URL: string;
       NEXT_PUBLIC_CALL_FOR_PROPOSALS_URL: string;
-      NEXT_PUBLIC_CALL_FOR_SPONSORSHIP_URL: string;
-      NEXT_PUBLIC_CALL_FOR_VOLUNTEERS_URL: string;
+      NEXT_PUBLIC_CALL_FOR_SPONSORSHIPS_URL: string;
+      NEXT_PUBLIC_CONTACT_US_URL: string;
 
       // Social Media Links
       NEXT_PUBLIC_TWITTER_URL: string;
