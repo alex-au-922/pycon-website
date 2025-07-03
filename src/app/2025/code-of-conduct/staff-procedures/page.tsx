@@ -193,15 +193,15 @@ export default function EnforcementProcedures() {
             <h3 className="text-xl font-semibold mt-6 mb-2">Attribution</h3>
             <ol className="list-decimal ml-6 space-y-1">
               <li>
-                The{" "}
+                The&nbsp;
                 <a
                   href="https://us.pycon.org/2023/about/code-of-conduct/"
                   target="_blank"
                   className="text-blue-700 underline"
                 >
                   <b>PyCon Code of Conduct</b>
-                </a>{" "}
-                is licensed under a{" "}
+                </a>
+                &nbsp; is licensed under a&nbsp;
                 <a
                   href="http://creativecommons.org/licenses/by/3.0/"
                   target="_blank"
@@ -212,7 +212,7 @@ export default function EnforcementProcedures() {
                 .
               </li>
               <li>
-                Ada Initiative's guide titled "
+                Ada Initiative's guide titled "&nbsp;
                 <a
                   href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Responding_to_reports"
                   target="_blank"
@@ -220,7 +220,7 @@ export default function EnforcementProcedures() {
                 >
                   <b>Conference anti-harassment/Responding to Reports</b>
                 </a>
-                " is licensed under a{" "}
+                &nbsp; " is licensed under a&nbsp;
                 <a
                   href="http://creativecommons.org/licenses/by/3.0/"
                   target="_blank"
@@ -231,19 +231,19 @@ export default function EnforcementProcedures() {
                 .
               </li>
               <li>
-                Audrey Eschright of{" "}
+                Audrey Eschright of&nbsp;
                 <a href="http://safetyfirstpdx.org/" target="_blank" className="text-blue-700 underline">
                   <b>Safety First PDX</b>
-                </a>{" "}
-                provided the impact vs risk assessment framework, which is licensed under a{" "}
+                </a>
+                &nbsp; provided the impact vs risk assessment framework, which is licensed under a&nbsp;
                 <a
                   href="http://creativecommons.org/licenses/by-sa/3.0/"
                   target="_blank"
                   className="text-blue-700 underline"
                 >
                   <b>Creative Commons Attribution Share-Alike 3.0 Unported License</b>
-                </a>{" "}
-                by Audrey Eschright of{" "}
+                </a>
+                &nbsp; by Audrey Eschright of&nbsp;
                 <a href="http://safetyfirstpdx.org/" target="_blank" className="text-blue-700 underline">
                   <b>Safety First PDX</b>
                 </a>
@@ -255,8 +255,8 @@ export default function EnforcementProcedures() {
                   className="text-blue-700 underline"
                 >
                   <b>Code of Conduct template</b>
-                </a>{" "}
-                was created by Otter Tech and is licensed under a{" "}
+                </a>
+                &nbsp; was created by Otter Tech and is licensed under a&nbsp;
                 <a
                   href="http://creativecommons.org/licenses/by/3.0/"
                   target="_blank"

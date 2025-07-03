@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export default function CodeOfConduct() {
   return (
@@ -108,18 +109,18 @@ export default function CodeOfConduct() {
             </p>
             <h2 className="text-2xl font-bold text-blue-600 mt-8 mb-4">Procedure for Handling Incidents</h2>
             <p>
-              <a href="/2025/code-of-conduct/procedures-for-reporting-incidents" className="text-blue-700 underline">
+              <Link href="/2025/code-of-conduct/procedures-for-reporting-incidents" className="text-blue-700 underline">
                 Procedures for Reporting Incidents
-              </a>
+              </Link>
             </p>
             <p>
-              <a href="/2025/code-of-conduct/enforcement-procedures" className="text-blue-700 underline">
+              <Link href="/2025/code-of-conduct/enforcement-procedures" className="text-blue-700 underline">
                 Enforcement Procedures
-              </a>
+              </Link>
             </p>
             <h2 className="text-2xl font-bold text-blue-600 mt-8 mb-4">License</h2>
             <p>
-              This Code of Conduct was forked from PyCon US from the{" "}
+              This Code of Conduct was forked from PyCon US from the&nbsp;
               <a
                 href="https://github.com/python/pycon-code-of-conduct"
                 target="_blank"

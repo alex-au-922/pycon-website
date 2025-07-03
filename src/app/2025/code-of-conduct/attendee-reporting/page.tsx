@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export default function ProceduresForReportingIncidents() {
   return (
@@ -34,37 +35,37 @@ export default function ProceduresForReportingIncidents() {
             </p>
             <h2 className="text-2xl font-bold text-blue-600 mt-8 mb-4">General Reporting Procedure</h2>
             <p>
-              The best way to contact the PyCon HK Code of Conduct event staff is by email at{" "}
+              The best way to contact the PyCon HK Code of Conduct event staff is by email at&nbsp;
               <a href="mailto:pycon@pycon.hk" className="text-blue-700 underline">
                 pycon@pycon.hk
               </a>
               . The members of the PyCon HK event staff who monitor this account are:
             </p>
-            <ul className="list-disc ml-6 space-y-1">
-              <li>Alex Au</li>
-              <li>Calvin Tsang</li>
+            <ul className="mt-4 list-disc ml-6 space-y-2">
+              <li className="md:pl-2">Alex Au</li>
+              <li className="md:pl-2">Calvin Tsang</li>
             </ul>
             <p>
               In the event of a <b>conflict of interest</b>, you may directly contact any of the lead incident
               responders:
             </p>
-            <ul className="list-disc ml-6 space-y-1">
-              <li>Henry Law, Conference Chair of PyCon HK 2025</li>
+            <ul className="mt-4 list-disc ml-6 space-y-2">
+              <li className="md:pl-2">Henry Law, Conference Chair of PyCon HK 2025</li>
             </ul>
             <h2 className="text-2xl font-bold text-blue-600 mt-8 mb-4">Report Data</h2>
             <p>When you make a report via email or phone, please include:</p>
-            <ul className="list-disc ml-6 space-y-1">
-              <li>Your contact info (so we can get in touch with you if we need to follow up)</li>
-              <li>Date and time of the incident</li>
-              <li>Location of incident</li>
-              <li>Whether the incident is ongoing</li>
-              <li>Description of the incident</li>
-              <li>
+            <ul className="mt-4 list-disc ml-6 space-y-2">
+              <li className="md:pl-2">Your contact info (so we can get in touch with you if we need to follow up)</li>
+              <li className="md:pl-2">Date and time of the incident</li>
+              <li className="md:pl-2">Location of incident</li>
+              <li className="md:pl-2">Whether the incident is ongoing</li>
+              <li className="md:pl-2">Description of the incident</li>
+              <li className="md:pl-2">
                 Identifying information of the reported person: name, physical appearance, height, clothing, voice
                 accent, identifying badge information such as company name, ribbons, or badge number
               </li>
-              <li>Additional circumstances surrounding the incident</li>
-              <li>
+              <li className="md:pl-2">Additional circumstances surrounding the incident</li>
+              <li className="md:pl-2">
                 Other people involved in or witnesses to the incident and their contact information or description
               </li>
             </ul>
@@ -89,15 +90,11 @@ export default function ProceduresForReportingIncidents() {
             <h2 className="text-2xl font-bold text-blue-600 mt-8 mb-4">Report Handling Procedure</h2>
             <p>
               When you make a report to an incident responder, they will gather information about the incident according
-              to the{" "}
+              to the&nbsp;
               <b>
-                <a
-                  href="/2025/code-of-conduct/enforcement-procedures"
-                  className="text-blue-700 underline"
-                  target="_blank"
-                >
+                <Link href="/2025/code-of-conduct/enforcement-procedures" className="text-blue-700 underline">
                   Procedure For Incident Response
-                </a>
+                </Link>
               </b>
               .
             </p>
