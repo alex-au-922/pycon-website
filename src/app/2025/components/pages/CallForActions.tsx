@@ -69,12 +69,12 @@ export default async function CallForActions() {
     >
       {/* Hero Section */}
       <div className="py-16 px-4 sm:px-6 lg:px-8 text-center">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-900 mb-6">
-          Be Part of PyCon 2025
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-600 mb-6">
+          Be Part of PyCon HK 2025
         </h1>
-        <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-          Join the Python community and contribute to making PyCon 2025 an
-          exceptional experience for everyone.
+        <p className="text-base sm:text-lg md:text-xl text-slate-600 max-w-3xl mx-auto">
+          Join the Python community 5nd contribute to making PyCon HK 2025 an
+          exceptional, fun and amazing experience for everyone.
         </p>
       </div>
 
