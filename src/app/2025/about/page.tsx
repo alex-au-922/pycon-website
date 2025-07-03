@@ -4,10 +4,10 @@ import aboutUsImg from "../../../../public/about-us.jpeg";
 
 export default async function About() {
   return (
-    <div className="bg-gradient-to-br from-blue-700 via-blue-500 to-blue-300 -mt-20 text-gray-600">
+    <div className="bg-gradient-to-br from-yellow-300 via-sky-500 to-sky-300 -mt-20 text-slate-500">
       <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <div className="bg-white bg-opacity-90 rounded-xl shadow-xl p-8 md:p-12 relative mt-20">
-          <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl mb-8 text-gray-800 text-center">
+          <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl mb-8 text-slate-600 text-center">
             About PyCon Hong Kong
           </h1>
 
@@ -22,7 +22,7 @@ export default async function About() {
             />
           </div>
 
-          <div className="space-y-6 text-gray-700 text-base/7 md:text-lg text-justify">
+          <div className="space-y-6 text-slate-500 text-base/7 md:text-lg text-justify">
             <p>
               PyCon Hong Kong (PyCon HK) is the leading Python conference in
               Hong Kong, bringing together Python enthusiasts to share their
@@ -36,7 +36,7 @@ export default async function About() {
               <Link
                 href="https://sammy.hk/"
                 target="_blank"
-                className="text-blue-600 hover:text-blue-800"
+                className="text-sky-600 hover:text-sky-800"
               >
                 Sammy Fung
               </Link>
@@ -48,7 +48,7 @@ export default async function About() {
               <Link
                 href="https://opensource.hk/"
                 target="_blank"
-                className="text-blue-600 hover:text-blue-800"
+                className="text-sky-600 hover:text-sky-800"
               >
                 Open Source Hong Kong
               </Link>
@@ -70,14 +70,14 @@ export default async function About() {
             </p>
 
             <div className="mt-8">
-              <h2 className="text-2xl font-bold text-blue-600 mb-4">
+              <h2 className="text-2xl font-bold text-sky-600 mb-4">
                 Follow us on:
               </h2>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
                 <Link
                   href="https://www.linkedin.com/company/pyconhk/"
                   target="_blank"
-                  className="flex items-center text-blue-600 hover:text-blue-800"
+                  className="flex items-center text-sky-600 hover:text-sky-800"
                 >
                   <span className="mr-2">LinkedIn:</span>
                   <span className="text-sm">linkedin.com/company/pyconhk</span>
@@ -85,7 +85,7 @@ export default async function About() {
                 <Link
                   href="https://pyconhk.substack.com/"
                   target="_blank"
-                  className="flex items-center text-blue-600 hover:text-blue-800"
+                  className="flex items-center text-sky-600 hover:text-sky-800"
                 >
                   <span className="mr-2">Substack:</span>
                   <span className="text-sm">pyconhk.substack.com</span>
@@ -93,7 +93,7 @@ export default async function About() {
                 <Link
                   href="https://bit.ly/pyconhk"
                   target="_blank"
-                  className="flex items-center text-blue-600 hover:text-blue-800"
+                  className="flex items-center text-sky-600 hover:text-sky-800"
                 >
                   <span className="mr-2">Discord:</span>
                   <span className="text-sm">bit.ly/pyconhk</span>
@@ -101,7 +101,7 @@ export default async function About() {
                 <Link
                   href="https://www.instagram.com/pyconhk"
                   target="_blank"
-                  className="flex items-center text-blue-600 hover:text-blue-800"
+                  className="flex items-center text-sky-600 hover:text-sky-800"
                 >
                   <span className="mr-2">Instagram:</span>
                   <span className="text-sm">instagram.com/pyconhk</span>
@@ -109,7 +109,7 @@ export default async function About() {
                 <Link
                   href="https://www.threads.net/@pyconhk"
                   target="_blank"
-                  className="flex items-center text-blue-600 hover:text-blue-800"
+                  className="flex items-center text-sky-600 hover:text-sky-800"
                 >
                   <span className="mr-2">Threads:</span>
                   <span className="text-sm">threads.net/@pyconhk</span>
@@ -117,7 +117,7 @@ export default async function About() {
                 <Link
                   href="https://www.facebook.com/pyconhk/"
                   target="_blank"
-                  className="flex items-center text-blue-600 hover:text-blue-800"
+                  className="flex items-center text-sky-600 hover:text-sky-800"
                 >
                   <span className="mr-2">Facebook:</span>
                   <span className="text-sm">facebook.com/pyconhk</span>
@@ -125,7 +125,7 @@ export default async function About() {
                 <Link
                   href="https://x.com/pyconhk/"
                   target="_blank"
-                  className="flex items-center text-blue-600 hover:text-blue-800"
+                  className="flex items-center text-sky-600 hover:text-sky-800"
                 >
                   <span className="mr-2">X:</span>
                   <span className="text-sm">x.com/pyconhk</span>
@@ -133,7 +133,7 @@ export default async function About() {
                 <Link
                   href="https://www.youtube.com/c/pyconhk"
                   target="_blank"
-                  className="flex items-center text-blue-600 hover:text-blue-800"
+                  className="flex items-center text-sky-600 hover:text-sky-800"
                 >
                   <span className="mr-2">YouTube:</span>
                   <span className="text-sm">youtube.com/c/pyconhk</span>
@@ -141,7 +141,7 @@ export default async function About() {
                 <Link
                   href="https://github.com/pyconhk/"
                   target="_blank"
-                  className="flex items-center text-blue-600 hover:text-blue-800"
+                  className="flex items-center text-sky-600 hover:text-sky-800"
                 >
                   <span className="mr-2">GitHub:</span>
                   <span className="text-sm">github.com/pyconhk</span>
