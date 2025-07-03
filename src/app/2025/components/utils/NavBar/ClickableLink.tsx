@@ -17,15 +17,11 @@ export default function ClickableLink({
   title,
   onClick,
 }: ClickableLinkProps) {
-  const isExternal = href.startsWith("http") || href.startsWith("mailto:");
-
   // Base styles
   const baseStyles = "transition-all duration-200 relative";
 
   // Separate active and hover styles
-  const linkStyles = isActive
-    ? "text-gray-800 font-bold"
-    : "text-gray-600/50";
+  const linkStyles = isActive ? "text-gray-800 font-bold" : "text-gray-600/50";
 
   // Combined styles
   const combinedStyles = `${baseStyles} ${linkStyles} ${className}`;
@@ -38,22 +34,13 @@ export default function ClickableLink({
     );
   }
 
-  if (isExternal) {
-    return (
-      <a
-        href={href}
-        className={combinedStyles}
-        target={target || "_blank"}
-        rel="noopener noreferrer"
-        onClick={onClick}
-      >
-        {title}
-      </a>
-    );
-  }
-
   return (
-    <Link href={href} className={combinedStyles} onClick={onClick}>
+    <Link
+      href={href}
+      className={combinedStyles}
+      target={target}
+      onClick={onClick}
+    >
       {title}
     </Link>
   );

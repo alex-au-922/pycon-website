@@ -22,8 +22,8 @@ export default function Footer() {
   };
 
   return (
-    <footer className="w-full bg-gray-800 text-white">
-      <div className="container mx-auto px-4 pt-12 pb-6">
+    <footer className="w-full bg-slate-700 text-white">
+      <div className="container mx-auto px-8 pt-12 pb-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4">Follow Us</h3>

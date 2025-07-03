@@ -7,6 +7,7 @@ import {
   FaInstagram,
   FaThreads,
 } from "react-icons/fa6";
+import Link from "next/link";
 
 interface SocialMediaIconsProps {
   spacing?: string;
@@ -56,7 +57,7 @@ export default async function SocialMediaIcons({
   return (
     <div className={`flex items-center ${spacing}`}>
       {socialMediaLinks.map(({ icon: Icon, href }) => (
-        <a
+        <Link
           key={href}
           href={href}
           target="_blank"
@@ -66,7 +67,7 @@ export default async function SocialMediaIcons({
           <Icon
             className={`font-bold ${iconColor} ${iconHoverColor} transition-colors ${iconExtraClassName}`}
           />
-        </a>
+        </Link>
       ))}
     </div>
   );

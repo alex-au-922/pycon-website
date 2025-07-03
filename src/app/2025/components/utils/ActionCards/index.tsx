@@ -2,12 +2,11 @@ import React from "react";
 
 interface ActionCardProps {
   topColorClassName: string;
-  // Accept either a component reference OR a pre-rendered JSX element
   Icon: React.ReactNode;
   children: React.ReactNode;
 }
 
-export default function ActionCard({
+export default async function ActionCard({
   topColorClassName,
   Icon,
   children,

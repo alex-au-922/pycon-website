@@ -1,5 +1,5 @@
-import { FaChevronDown, FaChevronUp } from "react-icons/fa6";
 import Link from "next/link";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa6";
 
 interface NavigationDropdownProps {
   title: string;

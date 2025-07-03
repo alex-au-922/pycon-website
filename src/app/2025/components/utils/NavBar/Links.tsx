@@ -8,7 +8,7 @@ interface NavBarLink {
   href?: string; // For clickable parent items in dropdowns
 }
 
-const links: NavBarLink[] = [
+export const links: NavBarLink[] = [
   {
     label: "News",
     content: "#news",
@@ -35,12 +35,12 @@ const links: NavBarLink[] = [
     content: [
       {
         label: "Enforcement Procedures",
-        content: "/code-of-conduct/enforcement-procedures",
+        href: "/code-of-conduct/staff-procedures",
         isActive: true,
       },
       {
         label: "Procedures for Reporting Incidents",
-        content: "/code-of-conduct/procedures-for-reporting-incidents",
+        href: "/code-of-conduct/attendee-reporting",
         isActive: true,
       },
     ] as NavBarLink[],
