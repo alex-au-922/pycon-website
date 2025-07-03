@@ -82,7 +82,7 @@ export default async function CallForActions() {
       <div className="max-w-7xl mx-auto pb-20 px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 text-sm md:text-base max-w-144 lg:max-w-screen mx-auto">
           <ActionCard
-            topColorClassName="bg-sky-300"
+            topColorClassName="bg-sky-400"
             Icon={
               <div className="h-16 w-16 rounded-full bg-blue-100 flex items-center justify-center mb-6">
                 <HiOutlineLightBulb className="w-8 h-8 text-sky-400" />

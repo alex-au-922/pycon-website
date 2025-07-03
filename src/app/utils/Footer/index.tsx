@@ -22,7 +22,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="w-full bg-slate-600 text-white">
+    <footer className="w-full bg-slate-700 text-white">
       <div className="container mx-auto px-8 pt-12 pb-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>

@@ -28,7 +28,7 @@ export function Introduction() {
 export function InformationWeCollect() {
   return (
     <section id="information-we-collect">
-      <h2 className="text-xl md:text-2xl font-bold text-blue-600 mb-4">
+      <h2 className="text-xl md:text-2xl font-bold text-sky-600 mb-4">
         1. Information We Collect
       </h2>
       <p className="mt-4">
@@ -95,7 +95,7 @@ export function InformationWeCollect() {
 export function HowDoWeUseThePersonalInformationWeCollect() {
   return (
     <section id="how-we-use-personal-information">
-      <h2 className="text-xl md:text-2xl font-bold text-blue-600 mb-4">
+      <h2 className="text-xl md:text-2xl font-bold text-sky-600 mb-4">
         2. How Do We Use The Personal Information We Collect
       </h2>
       <p className="mt-2">
@@ -139,7 +139,7 @@ export function HowDoWeUseThePersonalInformationWeCollect() {
 export function WhoDoWeShareYourPersonalInformationWith() {
   return (
     <section id="who-we-share-your-personal-information-with">
-      <h2 className="text-xl md:text-2xl font-bold text-blue-600 mb-4">
+      <h2 className="text-xl md:text-2xl font-bold text-sky-600 mb-4">
         3. Who Do We Share Your Personal Information With?
       </h2>
       <p className="mt-4">
@@ -177,7 +177,7 @@ export function WhoDoWeShareYourPersonalInformationWith() {
 export function UseOfThirdPartyServices() {
   return (
     <section id="use-of-third-party-services">
-      <h2 className="text-xl md:text-2xl font-bold text-blue-600 mb-4">
+      <h2 className="text-xl md:text-2xl font-bold text-sky-600 mb-4">
         4. Use of Third Party Services
       </h2>
       <p className="mt-4">
@@ -256,7 +256,7 @@ export function UseOfThirdPartyServices() {
 export function Cookies() {
   return (
     <section id="cookies">
-      <h2 className="text-xl md:text-2xl font-bold text-blue-600 mb-4">
+      <h2 className="text-xl md:text-2xl font-bold text-sky-600 mb-4">
         5. Cookies
       </h2>
       <div className="mt-4">
@@ -298,7 +298,7 @@ export function Cookies() {
           cookies may limit your ability to fully utilize the Site&apos;s
           features and functionality. For more information on managing and
           deleting cookies, including how to view active cookies, visit&nbsp;
-          <span className="text-blue-600 hover:text-blue-800 transition-colors duration-200">
+          <span className="text-sky-600 hover:text-sky-800 transition-colors duration-200">
             <a href="https://www.allaboutcookies.org/" target="_blank">
               https://www.allaboutcookies.org
             </a>
@@ -314,7 +314,7 @@ export function Cookies() {
 export function Hyperlinks() {
   return (
     <section id="hyperlinks">
-      <h2 className="text-xl md:text-2xl font-bold text-blue-600 mb-4">
+      <h2 className="text-xl md:text-2xl font-bold text-sky-600 mb-4">
         6. Hyperlinks
       </h2>
       <p className="mt-4">
@@ -331,7 +331,7 @@ export function Hyperlinks() {
 export function YourDataPrivacyRights() {
   return (
     <section id="your-data-privacy-rights">
-      <h2 className="text-xl md:text-2xl font-bold text-blue-600 mb-4">
+      <h2 className="text-xl md:text-2xl font-bold text-sky-600 mb-4">
         7. Your Data Privacy Rights
       </h2>
       <p className="mt-4">
@@ -379,7 +379,7 @@ export function YourDataPrivacyRights() {
         PyCon HK
         <br />
         E-mail:&nbsp;
-        <span className="text-blue-600 hover:text-blue-800 transition-colors duration-200">
+        <span className="text-sky-600 hover:text-sky-800 transition-colors duration-200">
           <a href="mailto:pycon@pycon.hk">pycon@pycon.hk</a>
         </span>
       </p>

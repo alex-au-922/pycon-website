@@ -4,7 +4,7 @@ import aboutUsImg from "../../../../public/about-us.jpeg";
 
 export default async function About() {
   return (
-    <div className="bg-gradient-to-br from-yellow-300 via-sky-500 to-sky-300 -mt-20 text-slate-500">
+    <div className="bg-gradient-to-br from-yellow-300 via-sky-500 to-sky-300 -mt-20 text-slate-500 text-sm md:text-base">
       <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <div className="bg-white bg-opacity-90 rounded-xl shadow-xl p-8 md:p-12 relative mt-20">
           <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl mb-8 text-slate-600 text-center">
@@ -22,7 +22,7 @@ export default async function About() {
             />
           </div>
 
-          <div className="space-y-6 text-slate-500 text-base/7 md:text-lg text-justify">
+          <div className="space-y-6 text-slate-500 text-base/7 lg:text-lg/8 text-justify">
             <p>
               PyCon Hong Kong (PyCon HK) is the leading Python conference in
               Hong Kong, bringing together Python enthusiasts to share their
