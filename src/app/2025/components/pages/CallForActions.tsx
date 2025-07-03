@@ -69,12 +69,12 @@ export default async function CallForActions() {
     >
       {/* Hero Section */}
       <div className="py-16 px-4 sm:px-6 lg:px-8 text-center">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-900 mb-6">
-          Be Part of PyCon 2025
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-600 mb-6">
+          Be Part of PyCon HK 2025
         </h1>
-        <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-          Join the Python community and contribute to making PyCon 2025 an
-          exceptional experience for everyone.
+        <p className="text-base sm:text-lg md:text-xl text-slate-500 max-w-3xl mx-auto">
+          Join the Python community 5nd contribute to making PyCon HK 2025 an
+          exceptional, fun and amazing experience for everyone.
         </p>
       </div>
 
@@ -82,26 +82,26 @@ export default async function CallForActions() {
       <div className="max-w-7xl mx-auto pb-20 px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 text-sm md:text-base max-w-144 lg:max-w-screen mx-auto">
           <ActionCard
-            topColorClassName="bg-blue-600"
+            topColorClassName="bg-sky-300"
             Icon={
               <div className="h-16 w-16 rounded-full bg-blue-100 flex items-center justify-center mb-6">
-                <HiOutlineLightBulb className="w-8 h-8 text-blue-600" />
+                <HiOutlineLightBulb className="w-8 h-8 text-sky-400" />
               </div>
             }
           >
-            <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl md:text-2xl font-bold text-slate-600 mb-4">
               Call for Proposals
             </h2>
-            <p className="text-gray-600 mb-8">
+            <p className="text-slate-500  mb-8">
               Share your Python knowledge with the community. We&apos;re looking
               for talks, tutorials, and workshops on a wide range of
               Python-related topics, from beginner to advanced.
             </p>
-            <ul className="space-y-3 text-gray-600 mb-8">
+            <ul className="space-y-3 text-slate-500 mb-8">
               {callForProposalsTypes.map((item, index) => (
                 <li key={index} className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-4 h-4 relative top-0.5">
-                    <MdCheck className="text-blue-600 w-full h-full" />
+                    <MdCheck className="text-sky-400 w-full h-full" />
                   </div>
                   <span>{item}</span>
                 </li>
@@ -111,7 +111,7 @@ export default async function CallForActions() {
               href={process.env.NEXT_PUBLIC_CALL_FOR_PROPOSALS_URL}
               rel="noopener noreferrer"
               target="_blank"
-              className="text-sm md:text-base inline-flex items-center gap-2 justify-center px-6 py-3 border border-transparent font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200"
+              className="text-sm md:text-base inline-flex items-center gap-2 justify-center px-6 py-3 border border-transparent font-medium rounded-md text-white bg-sky-400 hover:bg-sky-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 transition-colors duration-200"
             >
               Submit a Proposal
               <span>
@@ -121,26 +121,26 @@ export default async function CallForActions() {
           </ActionCard>
 
           <ActionCard
-            topColorClassName="bg-yellow-500"
+            topColorClassName="bg-yellow-300"
             Icon={
               <div className="h-16 w-16 rounded-full bg-yellow-100 flex items-center justify-center mb-6">
-                <HiOutlineCurrencyDollar className="w-8 h-8 text-yellow-600 font-bold" />
+                <HiOutlineCurrencyDollar className="w-8 h-8 text-yellow-400 font-bold" />
               </div>
             }
           >
-            <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-xl md:text-2xl font-bold text-slate-600 mb-4">
               Call for Sponsorships
             </h2>
-            <p className="text-gray-600 mb-8">
+            <p className="text-slate-500 mb-8">
               Support the Python community and gain visibility for your brand.
               PyCon offers various sponsorship tiers designed to maximize your
               organization&apos;s exposure.
             </p>
-            <ul className="space-y-3 text-gray-600 mb-8">
+            <ul className="space-y-3 text-slate-500 mb-8">
               {callForSponsorshipsBenefits.map((item, index) => (
                 <li key={index} className="flex items-start gap-4">
                   <div className="flex-shrink-0 w-4 h-4 relative top-0.5">
-                    <MdCheck className="text-yellow-500 w-full h-full" />
+                    <MdCheck className="text-yellow-400 w-full h-full" />
                   </div>
                   <span>{item}</span>
                 </li>
@@ -150,7 +150,7 @@ export default async function CallForActions() {
               href={process.env.NEXT_PUBLIC_CALL_FOR_SPONSORSHIPS_URL}
               rel="noopener noreferrer"
               target="_blank"
-              className="text-sm md:text-base inline-flex items-center gap-2 justify-center px-6 py-3 border border-transparent font-medium rounded-md text-white bg-yellow-500 hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 transition-colors duration-200"
+              className="text-sm md:text-base inline-flex items-center gap-2 justify-center px-6 py-3 border border-transparent font-medium rounded-md text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 transition-colors duration-200"
             >
               Become a Sponsor
               <span>
@@ -162,7 +162,7 @@ export default async function CallForActions() {
 
         {/* Important Dates */}
         <div className="mt-16 text-center">
-          <div className="px-4 py-8 bg-gradient-to-r from-blue-500 to-blue-700 rounded-xl">
+          <div className="px-4 py-8 bg-gradient-to-r from-sky-400 to-sky-500 rounded-xl">
             <h3 className="text-xl md:text-2xl font-bold mb-4 text-white">
               Key Dates
             </h3>
@@ -184,10 +184,10 @@ export default async function CallForActions() {
 
         {/* FAQ Section */}
         <div className="mt-16 text-gray-600">
-          <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 text-center">
+          <h3 className="text-xl md:text-2xl font-bold text-slate-600 mb-6 text-center">
             Frequently Asked Questions
           </h3>
-          <div className="space-y-4">
+          <div className="space-y-4 text-slate-500">
             {faqs.map((faq, index) => (
               <details
                 key={index}

@@ -1,6 +1,7 @@
 import { Itim } from "next/font/google";
 import CountdownTimer from "./CountdownTimer";
 import BannerImageSlide from "./BannerImageSlide";
+import Image from "next/image";
 
 const itim = Itim({ weight: ["400"], subsets: ["latin"] });
 
@@ -11,11 +12,9 @@ interface HeroBackgroundProps {
 
 function HomeBackground({ children, className = "" }: HeroBackgroundProps) {
   return (
-    <div
-      className={`relative w-full h-full bg-gradient-to-br from-cyan-400 via-green-300 to-yellow-300 overflow-hidden ${className}`}
-    >
-      {/* <Image
-        src="/background.png"
+    <div className={`relative w-full h-full overflow-hidden ${className}`}>
+      <Image
+        src="/bg-new1.png"
         alt="Background"
         fill
         priority
@@ -25,7 +24,7 @@ function HomeBackground({ children, className = "" }: HeroBackgroundProps) {
         style={{
           objectPosition: "center",
         }}
-      /> */}
+      />
       <div className="relative z-10 w-full h-full">{children}</div>
     </div>
   );
