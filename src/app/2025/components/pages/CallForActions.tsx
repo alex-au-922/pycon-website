@@ -35,11 +35,11 @@ const importantDates: ImportantDates[] = [
   },
   {
     title: "Conference Date",
-    date: "Oct 10, 2025",
+    date: "Oct 11, 2025",
   },
   {
     title: "Sprint Date",
-    date: "Oct 11, 2025",
+    date: "Oct 12, 2025",
   },
 ];
 
