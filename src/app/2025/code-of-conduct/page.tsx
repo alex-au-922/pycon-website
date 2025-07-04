@@ -5,7 +5,7 @@ export default function CodeOfConduct() {
   return (
     <>
       <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl mb-8 text-slate-600 text-center">Code of Conduct</h1>
-      <div className="space-y-6 text-gray-00 mt-4">
+      <div className="space-y-6 text-gray-700 mt-4">
         <p>
           PyCon Hong Kong is a community conference intended for networking and collaboration in the developer
           community.
