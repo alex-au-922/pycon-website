@@ -111,7 +111,7 @@ export default async function CallForActions() {
               href={process.env.NEXT_PUBLIC_CALL_FOR_PROPOSALS_URL}
               rel="noopener noreferrer"
               target="_blank"
-              className="text-sm md:text-base inline-flex items-center gap-2 justify-center px-6 py-3 border border-transparent font-medium rounded-md text-white bg-sky-400 hover:bg-sky-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 transition-colors duration-200"
+              className="text-base md:text-lg inline-flex items-center gap-2 justify-center px-6 py-3 border border-transparent font-medium rounded-md text-white bg-sky-400 hover:bg-sky-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 transition-colors duration-200"
             >
               Submit a Proposal
               <span>
@@ -150,7 +150,7 @@ export default async function CallForActions() {
               href={process.env.NEXT_PUBLIC_CALL_FOR_SPONSORSHIPS_URL}
               rel="noopener noreferrer"
               target="_blank"
-              className="text-sm md:text-base inline-flex items-center gap-2 justify-center px-6 py-3 border border-transparent font-medium rounded-md text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 transition-colors duration-200"
+              className="text-base md:text-lg inline-flex items-center gap-2 justify-center px-6 py-3 border border-transparent font-medium rounded-md text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 transition-colors duration-200"
             >
               Become a Sponsor
               <span>
